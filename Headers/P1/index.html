@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Header</title>
+  </head>
+  <body>
+    <!-- start of Header -->
+    <header>
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#" class="menu-link home active"
+              ><ion-icon name="home-sharp"></ion-icon>Home</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Account</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Categories</a>
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end of Header -->
+    <!-- start of aside -->
+    <aside>
+      <h2>Live above the clouds</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cum vel
+        ratione incidunt magni, aut repellat suscipit alias nemo unde
+        recusandae, id velit repellendus dignissimos? Vitae quaerat possimus
+        ullam, officiis enim temporibus, atque ab architecto necessitatibus quo!
+        Nihil, quibusdam voluptates.
+      </p>
+      <a href="#" class="button"
+        >Discover Now<ion-icon
+          class="icon"
+          name="arrow-forward-sharp"
+        ></ion-icon
+      ></a>
+    </aside>
+    <!-- end of aside -->
+    <!-- scripts -->
+    <script>
+      let listLink = document.querySelectorAll(".menu-link");
+      listLink.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          listLink.forEach((link) => link.classList.remove("active"));
+          event.target.classList.add("active");
+        });
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
