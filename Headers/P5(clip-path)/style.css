@@ -5,3 +5,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+}
+
+.shape {
+  width: 300px;
+  height: 90vh;
+  position: absolute;
+  right: 10%;
+  background-color: rgb(179, 4, 4);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  background-image: url(./pic/company.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: circle(50% at 50% 50%);
+}
