@@ -42,6 +42,7 @@ header {
 .menu-item {
   margin: 0 15px;
   list-style-type: none;
+  display: flex;
 }
 
 .menu-link {
