@@ -26,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .slider::-webkit-scrollbar {

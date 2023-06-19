@@ -6,9 +6,9 @@ setInterval(() => {
 
 function scrollY() {
   if (scrollChecker()) {
-    console.log(true);
+    slider.scrollLeft += 400;
   } else {
-    console.log(false);
+    slider.scrollLeft = 0;
   }
 }
 
