@@ -34,3 +34,11 @@
   background-position: center;
   clip-path: circle(50% at 50% 50%);
 }
+
+.red-line {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 10%;
+  background-color: rgb(179, 4, 4);
+}
