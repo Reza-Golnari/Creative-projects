@@ -6,12 +6,17 @@
   box-sizing: border-box;
 }
 
-.header {
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
   position: relative;
-  font-family: "Exo 2", sans-serif;
+  display: grid;
+  place-content: center;
 }
 
 .shape {
@@ -41,4 +46,43 @@
   position: absolute;
   bottom: 10%;
   background-color: rgb(179, 4, 4);
+}
+
+.content-box {
+  width: 30%;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+}
+
+.content-box h1 {
+  font-size: 2.7rem;
+}
+
+.big-title {
+  color: rgb(179, 4, 4);
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: rgb(107, 107, 107);
+}
+
+.social-list {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 15px;
+}
+
+.social-item {
+  list-style-type: none;
+}
+
+.social-link {
+  text-decoration: none;
+  color: rgb(179, 4, 4);
+  font-size: 1.5rem;
 }
