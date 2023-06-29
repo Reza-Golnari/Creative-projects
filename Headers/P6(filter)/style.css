@@ -51,3 +51,24 @@ header::before {
   font-size: 1.25rem;
   color: #fff;
 }
+
+.content-box {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 140px;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.btn {
+  width: 150px;
+  height: 54px;
+  border-radius: 10px;
+  background-color: rgba(171, 127, 80, 0.8);
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
