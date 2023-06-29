@@ -25,3 +25,29 @@ header::before {
   width: 50%;
   height: 100vh;
 }
+
+.menu {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.773),
+    rgba(171, 127, 80, 0.8)
+  );
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu-item {
+  list-style-type: none;
+  z-index: 555;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+}
