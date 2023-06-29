@@ -11,4 +11,17 @@ header {
   height: 100vh;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
+  background-image: url(pic/header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  backdrop-filter: grayscale(100%);
+  width: 50%;
+  height: 100vh;
 }
